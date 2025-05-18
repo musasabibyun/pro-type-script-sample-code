@@ -3,7 +3,7 @@ description:
 globs: 
 alwaysApply: false
 ---
-現在のディレクトリで以下の操作を行ってください
+指定したディレクトリで以下の操作を行ってください
 
 1. `npm init --yes` を実行
 2. `npm install --save-dev typescript@4.6.2 @types/node@14.14.10` を実行
