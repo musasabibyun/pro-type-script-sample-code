@@ -5,10 +5,15 @@ alwaysApply: false
 ---
 指定したディレクトリで以下の操作を行ってください
 
-1. `npx tsc --init`
-2. tsconfig.json で以下の項目を修正
+1. ディレクトリ名から日本語を取り除く
+  - `1.3.5_初めてのTypeScriptプログラム` というディレクトリ名なら `1.3.5` に変更
+  - `コラム4_TypeScriptにおける数値はIEEE 754倍精度浮動小数点数である` というディレクトリ名なら `column_4` に変更
+2. `npx tsc --init` を実行
+3. tsconfig.json で以下の項目を修正
   a. "target": "es2020" に変更
   b. "module": "esnext" に変更
   c. "moduleResolution": "node" を有効
   d. "outDir": "./dist" を有効
   e. ファイルの最後に "include": ["./**/*.ts"] を追加
+4. 元のディレクトリは削除する
+5. コミットメッセージを "setup dir ${作成したディレクトリ名}" としてコミットする
